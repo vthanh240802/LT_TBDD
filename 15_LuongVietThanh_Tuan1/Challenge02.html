@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Coding Challenge #2
+        function BMI(mass, height) {
+            var bmi = mass / (height * height);
+            return bmi.toFixed(2);
+        }
+
+        function compareBMI(markBMI, johnBMI) {
+            if (markBMI > johnBMI) {
+                console.log('Marks (' + markBMI + ') BMI is higher than ' + 'Johns! (' + johnBMI + ')');
+            } else if (johnBMI > markBMI) {
+                console.log('Johns (' + johnBMI + ') BMI is higher than ' + 'Marks! (' + markBMI + ')');
+            }
+        }
+
+        var massMarks = 78;
+        var heightMarks = 1.69;
+        var markBMI = BMI(massMarks, heightMarks);
+
+        var massJohns = 95;
+        var heightJohns = 1.88;
+        var johnBMI = BMI(massJohns, heightJohns);
+
+        compareBMI(markBMI, johnBMI);
+    </script>
+</body>
+
+</html>l

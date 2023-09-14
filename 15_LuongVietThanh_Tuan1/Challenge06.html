@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcTip(bill) {
+                return (bill >= 50 && bill <= 300) ? (bill * 0.15).toFixed(2) : (bill * 0.2).toFixed(2);
+            }
+            var bills = [125, 555, 44];
+            var tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+            var total = [Number(bills[0]) + Number(tips[0]), Number(bills[1]) + Number(tips[1]), Number(bills[2]) + Number(tips[2])];
+            console.log(bills);
+            console.log(tips);
+            console.log(total);
+    </script>
+</body>
+</html>
