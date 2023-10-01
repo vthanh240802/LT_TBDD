@@ -11,15 +11,14 @@ export default function App() {
         source={require('./assets/Ellipse 8.png')}
         style={styles.img}
       />
-      <Text style={styles.txt1} >
-        <h1> GROW <br></br>
-          YOUR BUSINESS
-        </h1>
-      </Text>
-      <Text style={styles.txt2}>
+      <View style={styles.txtContainer}>
+      <Text style={styles.txt1}>GROW</Text>
+      <Text style={styles.txt2}>YOUR BUSINESS</Text>
+      <Text style={styles.txt3}>
         <p>We will help you to grow your business using online server</p>
       </Text>
-      <View style={styles.containerbtn}>
+      </View>
+      <View style={styles.btnContainer}>
         <button style={styles.btn}>
           LOGIN
         </button>
@@ -35,46 +34,55 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
- //   backgroundColor: 'rgba(0, 204, 249, 0.58)',
     backgroundImage: 'linear-gradient(180deg, #C7F4F7 0.03%, #D1F4F6 30.21%, #E5F4F5 85.42%, #00CCF9 100%)',
+ //   alignItems: 'center',
     justifyContent: 'center',
   },
   img: {
-    marginTop: 105,
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginBottom: 0,
-    width: 140,
-    height: 140,
-    border: 15
+    width: '140px',
+    height: '140px',
+    marginTop: '10px',
+    marginLeft: '120px',
+    marginRight: '110px',
+    marginBottom: 0
+  },
+  txtContainer: {
+    display: 'flex',
+    alignItems: 'center',
   },
   txt1: {
-    marginTop: 52,
-    marginBottom: 0,
-    textAlign: 'center',
-
+    fontSize: '30px',
+    fontWeight: 'bold',
+    marginTop: '50px',
+    marginBottom: 0
   },
   txt2: {
-    marginTop: 20,
-    marginBottom: 50,
-    fontWeight: 800,
-    fontSize: 16,
-    textAlign: 'center'
+    fontSize: '30px',
+    fontWeight: 'bold',
+    marginBottom: 0
   },
-  containerbtn: {
-    flex: 2,
+  txt3: {
+    fontSize: '15px',
+    fontWeight: 'bold',
+    marginTop: '30px',
+    textAlign:'center',
+  },
+  btnContainer: {
+    display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
-    
   },
   btn: {
-    width: 119,
-    height: 48,
-    fontWeight: 1000,
-    border: 'none',
-    borderRadius: 10,
-    backgroundColor: '#E3C000',
+    marginTop: '20px',
+    width: '119px',
+    height: '48px',
+    borderRadius: '5px',
+    border:"none",
+    backgroundColor: '#e3c000',
+    fontWeight: 'bold',
+    fontSize: '18px'
   }
+
 
 });
 
